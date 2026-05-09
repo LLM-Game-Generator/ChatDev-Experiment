@@ -761,6 +761,8 @@ graph:
       to: Game_Launcher
       trigger: true
       carry_data: false
+      # Clear the previous context to prevent 400 error
+      clear_context: true
     - from: QA_Agent
       to: Polish_Refinement
       trigger: true
